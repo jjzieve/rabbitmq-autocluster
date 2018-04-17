@@ -66,6 +66,14 @@
          {config, k8s_address_type,      "K8S_ADDRESS_TYPE",       "ip",         string,  false},
          {config, k8s_hostname_suffix,   "K8S_HOSTNAME_SUFFIX",    "",           string,  false},
 
+         {config, swarm_scheme,          "SWARM_SCHEME",           "https",       string,  false}, %% swarm
+         {config, swarm_port,            "SWARM_PORT",             443,         integer, false},
+         {config, swarm_host,            "SWARM_HOST",             "swarm.default.svc.cluster.local"
+                                                                                 string,  false},
+         {config, swarm_address_type,    "SWARM_ADDRESS_TYPE",     "ip",         string,  false},
+         {config, swarm_hostname_suffix, "SWARM_HOSTNAME_SUFFIX",  "",           string,  false},
+         {config, swarm_service_name,    "SWARM_SERVICE_NAME",     "rabbitmq",   string,  false},
+
          {config, etcd_scheme,           "ETCD_SCHEME",            "http",       string,  false}, %% etcd
          {config, etcd_host,             "ETCD_HOST",              "localhost",  string,  false},
          {config, etcd_port,             "ETCD_PORT",              2379,         integer, true},
