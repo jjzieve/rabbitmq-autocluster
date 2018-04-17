@@ -116,6 +116,7 @@ extract_node_list({struct, Response}) ->
 
 %% @doc Return a list of path segments that are the base path for swarm key actions
 %% curl -X GET -H "Accept: application/json" --unix-socket /var/run/docker.sock 'http://localhost/networks/network_name?verbose=true'
+%% curl -X GET -H "Accept: application/json" --unix-socket /var/run/docker.sock 'http://localhost/tasks?filters=\{"service":\{"iaap_rabbit-mq":true\}\}'
 %% Filter by Services(ServiceName) -> Tasks -> EndpointIP (this returns our "node list")
 %% @end
 %%
